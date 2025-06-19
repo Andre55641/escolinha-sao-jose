@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escolinha São José</title>
+  <style>
+    :root {
+      --azul: #3a8edc;
+      --verde: #4caf50;
+      --rosa: #e91e63;
+      --fundo: #f9f9f9;
+      --texto-escuro: #333;
+      --texto-claro: #fff;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: var(--fundo);
+      color: var(--texto-escuro);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--azul), var(--verde), var(--rosa));
+      padding: 20px;
+      color: var(--texto-claro);
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: var(--azul);
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: var(--texto-claro);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: var(--rosa);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: var(--verde);
+      border-bottom: 3px solid var(--rosa);
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: var(--azul);
+      color: var(--texto-claro);
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 450px;
+    }
+
+    form label {
+      font-weight: 600;
+    }
+
+    form input, form textarea {
+      padding: 8px;
+      border: 1.5px solid var(--verde);
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    form button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: var(--rosa);
+      color: var(--texto-claro);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #c2185b;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      main {
+        margin: 15px;
+      }
+
+      form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Escolinha São José</h1>
+  <p>A escola é apenas o começo do universo do conhecimento.</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre</a>
+  <a href="#turmas">Turmas</a>
+  <a href="#matriculas">Matrículas</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<main>
+
+  <section id="sobre">
+    <h2>Sobre a Escola</h2>
+    <p>Estamos abrindo nossas portas novamente: a Escolinha São José está de volta!</p>
+    <p>Compromisso com a educação infantil de qualidade.</p>
+    <p>Ambiente acolhedor, lúdico e seguro.</p>
+    <p><strong>Missão:</strong> formar crianças conscientes e criativas.</p>
+    <p><strong>Visão:</strong> ser referência em educação infantil na região.</p>
+    <p><strong>Valores:</strong> respeito, cuidado, aprendizado e alegria.</p>
+  </section>
+
+  <section id="turmas">
+    <h2>Turmas</h2>
+    <ul>
+      <li><strong>Berçário:</strong> a partir de 4 meses.</li>
+      <li><strong>Maternal I e II:</strong> 2 a 3 anos.</li>
+      <li><strong>Jardim I e II:</strong> 4 a 5 anos.</li>
+    </ul>
+    <p>Cada turma conta com atividades específicas para o desenvolvimento cognitivo, motor e social.</p>
+  </section>
+
+  <section id="matriculas">
+    <h2>Matrículas</h2>
+    <p><strong>Período:</strong> aberto durante o ano inteiro.</p>
+    <p><strong>Documentação necessária:</strong></p>
+    <ul>
+      <li>Certidão de nascimento da criança</li>
+      <li>RG e CPF dos responsáveis</li>
+      <li>Comprovante de endereço</li>
+      <li>Carteira de vacinação atualizada</li>
+    </ul>
+    <p><strong>Formas de matrícula:</strong> diretamente na escola ou via formulário online.</p>
+    <p><strong>Atendimento:</strong> segunda a sexta, das 8h às 17h.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><strong>Endereço:</strong> Rua Galo da Serra, Quadra 65, Lote 10 – Colina Azul</p>
+    <p><strong>WhatsApp:</strong> (62) 93300-5133</p>
+    <p><strong>E-mail:</strong> <a href="mailto:escolinhasaojose10@gmail.com">escolinhasaojose10@gmail.com</a></p>
+
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="assunto" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Escolinha São José. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
